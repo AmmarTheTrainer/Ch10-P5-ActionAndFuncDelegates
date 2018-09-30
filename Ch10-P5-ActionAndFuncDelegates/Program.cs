@@ -21,7 +21,7 @@ namespace Ch10_P5_ActionAndFuncDelegates
             //UIdelegate.Invoke("this is a heading" , " show this message to UI ");
 
 
-            Func<int, int , int> sumDel = new Func<int, int , int>(Add);
+            Func<int, int, int> sumDel = Add;
 
             int sum = sumDel.Invoke(2, 2);
             Console.WriteLine(" sum = {0} " , sum);
